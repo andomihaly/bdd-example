@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Started</title>
+</head>
+<body>
+
+<script src="calculator.js"></script>
+
+<div>
+    <!--<h1>Hello Calculator!</h1>-->
+</div>
+<div>
+    <div style="text-align: left; padding: 10px;">Összeadás</div>
+    <div>
+        <input type="number" id="addition_number1">
+        +
+        <input type="number" id="addition_number2">
+        =
+        <span id="addition_result"></span>
+    </div>
+    <div>
+        <button type="button" id="addition_button" onclick="calculateAddition()">Számol</button>
+    </div>
+</div>
+
+<div>
+    <div style="text-align: left; padding: 10px;">Szorzás</div>
+    <div>
+        <input type="number" id="multiplication_number1">
+        *
+        <input type="number" id="multiplication_number2">
+        =
+        <span id="multiplication_result"></span>
+    </div>
+    <div>
+        <button type="button" id="multiplication_button" onclick="calculateMultiplication()">Számol</button>
+    </div>
+</div>
+</body>
+</html>
