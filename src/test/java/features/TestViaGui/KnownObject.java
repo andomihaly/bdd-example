@@ -13,7 +13,10 @@ public class KnownObject {
 
     public WebDriver getDriver() {
         if (driver == null) {
-            System.setProperty("webdriver.chrome.driver", "src\\test\\java\\chromedriver.exe");
+            if (System.getProperty("os.name").contains("Windows"))
+                System.setProperty("webdriver.chrome.driver", "src\\test\\java\\chromedriver.exe");
+            else
+                System.setProperty("webdriver.chrome.driver", "src/test/java/chromedriver");
             driver = new ChromeDriver();
             driver.get("http://localhost:8080/index.html");
             PageFactory.initElements(driver, CalculatorHomePage.class);
